@@ -4,5 +4,42 @@
       "subtitle": "Encuentra fácilmente estacionamiento desde la comodidad de tu dispositivo"
     }
   },
-  "webApplication": {}
+  "webApplication": {
+    "findYourPark": {
+      "title": "Encuentra tu Park",
+      "subtitle": "Busca un estacionamiento privado cerca tuyo y escoge la mejor opción para ti. Podrás filtrar por precio y ver la ubicación del estacionamiento en el mapa.",
+      "searchAddress": "Buscar en una dirección específica...",
+      "fareFilter": "Filtrar por tarifa",
+      "ratingFilter": "Filtrar por puntuación",
+      "searchButton": "Buscar"
+    },
+    "sidebar": {
+      "edit": "Editar perfil",
+      "find": "Encuentra tu Park",
+      "rent": "Alquilar Park",
+      "garages": "Mis Parks",
+      "history": "Historial",
+      "logOut": "Cerrar sesión"
+    },
+    "rentParking": {
+      "title": "Alquilar Park",
+      "subtitle": "Rellena el siguiente formulario con los datos del Park que desees alquilar. Una vez llenado el formulario, pulsa en el botón \"Publicar Park\" para publicar el estacionamiento.\"",
+      "addressLabel": "Dirección exacta del espacio a alquilar:",
+      "spacesFilter": "Espacios disponibles",
+      "length": "Longitud",
+      "width": "Anchura",
+      "height": "Altura",
+      "startTime": "Tiempo Inicio",
+      "endTime": "Tiempo Fin",
+      "phone": "Teléfono",
+      "price": "Precio por hora",
+      "description": "Descripción",
+      "commission": "incluye comisión",
+      "postButton": "Publicar Park"
+    },
+    "notFound": {
+      "message": "Ups, página no encontrada",
+      "error": "Error 404: Lo sentimos, la página que buscas no se pudo encontrar."
+    }
+  }
 }

@@ -4,5 +4,42 @@
       "subtitle": "Easily find parking from the comfort of your device"
     }
   },
-  "webApplication": {}
+  "webApplication": {
+    "findYourPark": {
+      "title": "Find your Park",
+      "subtitle": "Search for a parking lot near you and find the best option for you. You can filter by price and see the location of the parking lot on the map.",
+      "searchAddress": "Search in a specific address...",
+      "fareFilter": "Filter by fare",
+      "ratingFilter": "Filter by rating",
+      "searchButton": "Search"
+    },
+    "sidebar": {
+      "edit": "Edit profile",
+      "find": "Find your Park",
+      "rent": "Rent parking",
+      "garages": "My Parks",
+      "history": "History",
+      "logOut": "Log Out"
+    },
+    "rentParking": {
+      "title": "Rent parking",
+      "subtitle": "Fill in the following form with the information of the parking lot you want to rent. Once you have completed the form, click on the \"Post parking\" button to publish the parking lot.",
+      "addressLabel": "Exact address of the space to rent:",
+      "spacesFilter": "Parking spaces available",
+      "length": "Length",
+      "width": "Width",
+      "height": "Height",
+      "startTime": "Start Time",
+      "endTime": "End time",
+      "phone": "Phone number",
+      "price": "Price per hour",
+      "description": "Description",
+      "commission": "includes commission",
+      "postButton": "Post parking"
+    },
+    "notFound": {
+      "message": "Oops, page not found",
+      "error": "Error 404: Sorry, the page you are looking for could not be found."
+    }
+  }
 }
