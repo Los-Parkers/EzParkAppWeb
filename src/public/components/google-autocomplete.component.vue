@@ -31,7 +31,7 @@ initAutocomplete()
   <input
     class="p-inputtext"
     autocomplete="off"
-    placeholder="Search in a specific address..."
+    :placeholder="$t('webApplication.findYourPark.searchAddress')"
     ref="inputRef"
   />
 </template>

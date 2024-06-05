@@ -126,17 +126,14 @@ function handlePostGarage() {
   <v-base-layout>
     <section class="main-section">
       <div class="section-header">
-        <h2 class="section-title">Rent your parking</h2>
-        <p class="section-subtitle">
-          Fill in the following form with the information of the parking lot you want to rent. Once
-          you have completed the form, click on the "Post parking" button to publish the parking lot
-        </p>
+        <h2 class="section-title">{{$t('webApplication.rentParking.title')}}</h2>
+        <p class="section-subtitle">{{$t('webApplication.rentParking.subtitle')}}</p>
       </div>
       <pv-divider />
       <form @submit.prevent>
         <div class="register-form-section--top">
           <div class="register-form-field register-form-field--address">
-            <label for="address">Exact address of the space to rent:</label>
+            <label for="address">{{$t('webApplication.rentParking.addressLabel')}}</label>
             <v-google-autocomplete
               class="input-autocomplete"
               @placeChanged="handleAutocompletePlaceChanged"
@@ -144,7 +141,7 @@ function handlePostGarage() {
             />
           </div>
           <div class="register-form-field register-form-field--spaces">
-            <label for="address">Parking spaces available</label>
+            <label for="address">{{$t('webApplication.rentParking.spacesFilter')}}</label>
             <pv-input-text v-model="formState.spaces" />
           </div>
         </div>
@@ -154,38 +151,38 @@ function handlePostGarage() {
         <div class="register-form-section--bottom">
           <div class="register-form-additional-info">
             <div class="register-form-field">
-              <label for="length">Length (m):</label>
+              <label for="length">{{$t('webApplication.rentParking.length')}} (m):</label>
               <pv-input-text v-model="formState.length" />
             </div>
             <div class="register-form-field">
-              <label for="width">Width (m):</label>
+              <label for="width">{{$t('webApplication.rentParking.width')}} (m):</label>
               <pv-input-text v-model="formState.width" />
             </div>
             <div class="register-form-field">
-              <label for="height">Height (m):</label>
+              <label for="height">{{$t('webApplication.rentParking.height')}} (m):</label>
               <pv-input-text v-model="formState.height" />
             </div>
             <div class="register-form-field">
-              <label for="startTime">Start time:</label>
+              <label for="startTime">{{$t('webApplication.rentParking.startTime')}} :</label>
               <pv-input-mask mask="99:99" v-model="formState.startTime" />
             </div>
             <div class="register-form-field">
-              <label for="endTime">End time</label>
+              <label for="endTime">{{$t('webApplication.rentParking.endTime')}} :</label>
               <pv-input-mask mask="99:99" v-model="formState.endTime" />
             </div>
             <div class="register-form-field">
-              <label for="phone">Phone number</label>
+              <label for="phone">{{$t('webApplication.rentParking.phone')}} :</label>
               <pv-input-mask mask="999-999-999" v-model="formState.phone" />
             </div>
           </div>
           <div class="register-form-cta">
             <div class="register-form-field register-form-field--fare">
-              <label for="fare">Price per hour</label>
+              <label for="fare">{{$t('webApplication.rentParking.price')}} :</label>
               <pv-input-mask mask="S/ 99.99" v-model="formState.fare" />
-              <small>* includes commission</small>
+              <small>* {{$t('webApplication.rentParking.commission')}}</small>
             </div>
             <div class="register-form-field register-form-field--description">
-              <label for="description">Description</label>
+              <label for="description">{{$t('webApplication.rentParking.description')}} :</label>
               <pv-input-text />
             </div>
             <div class="post-container">
@@ -194,7 +191,7 @@ function handlePostGarage() {
                 v-else
                 @click="handlePostGarage()"
                 class="register-form-post-btn"
-                label="Post parking"
+                :label="$t('webApplication.rentParking.postButton')"
                 severity="contrast"
               />
             </div>

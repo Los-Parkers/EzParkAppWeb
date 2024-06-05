@@ -20,32 +20,32 @@ const visible = ref(false)
       <pv-avatar class="profile-avatar" icon="pi pi-user" size="large" shape="square" />
       <div class="profile-stuff">
         <h2 class="profile-name">Juan Carlos</h2>
-        <p class="edit-profile">Edit profile</p>
+        <p class="edit-profile">{{$t('webApplication.sidebar.edit')}}</p>
       </div>
     </div>
     <div class="items-container">
       <div class="sidebar-item">
         <router-link class="nav-link" to="/find-your-park" active-class="nav-link--active">
           <i class="pi pi-home" />
-          <span>Find your park</span>
+          <span>{{$t('webApplication.sidebar.find')}}</span>
         </router-link>
       </div>
       <div class="sidebar-item">
         <router-link class="nav-link" to="/register-park" active-class="nav-link--active">
           <i class="pi pi-dollar" />
-          <span>Rent Parking</span>
+          <span>{{$t('webApplication.sidebar.rent')}}</span>
         </router-link>
       </div>
       <div class="sidebar-item">
         <router-link class="nav-link" to="/your-garages" active-class="nav-link--active">
           <i class="pi pi-book" />
-          <span>Your garages</span>
+          <span>{{$t('webApplication.sidebar.garages')}}</span>
         </router-link>
       </div>
       <div class="sidebar-item">
         <router-link class="nav-link" to="/history" active-class="nav-link--active">
           <i class="pi pi-history" />
-          <span>History</span>
+          <span>{{$t('webApplication.sidebar.history')}}</span>
         </router-link>
       </div>
     </div>
@@ -53,7 +53,7 @@ const visible = ref(false)
       <div class="sidebar-item">
         <router-link class="nav-link" to="/">
           <i class="pi pi-sign-out" />
-          <span>Log Out</span>
+          <span>{{$t('webApplication.sidebar.logOut')}}</span>
         </router-link>
       </div>
     </div>
@@ -65,32 +65,32 @@ const visible = ref(false)
           <pv-avatar class="profile-avatar" icon="pi pi-user" size="large" shape="square" />
           <div class="profile-stuff">
             <h2 class="profile-name">Juan Carlos</h2>
-            <p class="edit-profile">Edit profile</p>
+            <p class="edit-profile">{{$t('webApplication.sidebar.edit')}}</p>
           </div>
         </div>
         <div class="items-container">
           <div class="sidebar-item">
             <router-link class="nav-link" to="/find-your-park" active-class="nav-link--active">
               <i class="pi pi-home" />
-              <span>Find your park</span>
+              <span>{{$t('webApplication.sidebar.find')}}</span>
             </router-link>
           </div>
           <div class="sidebar-item">
             <router-link class="nav-link" to="/register-park" active-class="nav-link--active">
               <i class="pi pi-dollar" />
-              <span>Rent Parking</span>
+              <span>{{$t('webApplication.sidebar.rent')}}</span>
             </router-link>
           </div>
           <div class="sidebar-item">
             <router-link class="nav-link" to="/your-garages" active-class="nav-link--active">
               <i class="pi pi-book" />
-              <span>Your garages</span>
+              <span>{{$t('webApplication.sidebar.garages')}}</span>
             </router-link>
           </div>
           <div class="sidebar-item">
             <router-link class="nav-link" to="/history" active-class="nav-link--active">
               <i class="pi pi-history" />
-              <span>History</span>
+              <span>{{$t('webApplication.sidebar.history')}}</span>
             </router-link>
           </div>
         </div>
@@ -98,7 +98,7 @@ const visible = ref(false)
           <div class="sidebar-item">
             <router-link class="nav-link" to="/">
               <i class="pi pi-sign-out" />
-              <span>Log Out</span>
+              <span>{{$t('webApplication.sidebar.logOut')}}</span>
             </router-link>
           </div>
         </div>

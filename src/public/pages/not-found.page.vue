@@ -16,10 +16,8 @@ import BgIllustration from '@/assets/svg/bg-illustration.svg?component'
         <bg-illustration viewBox="0 0 547 463" class="bg-illustration" />
         <i class="pi pi-ban not-found-icon" />
       </div>
-      <h1 class="not-found-title">Ups, page not found</h1>
-      <p class="not-found-description">
-        Error 404: Sorry, the page you are looking for could not be found.
-      </p>
+      <h1 class="not-found-title">{{$t('webApplication.notFound.message')}}</h1>
+      <p class="not-found-description">{{$t('webApplication.notFound.error')}}</p>
     </section>
   </v-base-layout>
 </template>

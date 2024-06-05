@@ -29,7 +29,7 @@ const fareOptions = ref([
   'S/5.00 - S/10.00',
   'S/10.00 - S/15.00',
   'S/15.00 - S/20.00',
-  'S/20.00 - more'
+  'S/20.00 +'
 ])
 
 const selectedRating = ref('')
@@ -56,11 +56,8 @@ function handleAutocompletePlaceChanged(place) {
   <v-base-layout>
     <section class="main-section">
       <header class="section-header">
-        <h1 class="section-title">Find your park</h1>
-        <p class="section-subtitle">
-          Search for a parking lot near you and find the best option for you. You can filter by
-          price and see the location of the parking lot on the map.
-        </p>
+        <h1 class="section-title">{{$t('webApplication.findYourPark.title')}}</h1>
+        <p class="section-subtitle">{{$t('webApplication.findYourPark.subtitle')}}</p>
       </header>
       <div class="search-container">
         <form class="search-form" @submit.prevent>
@@ -71,19 +68,19 @@ function handleAutocompletePlaceChanged(place) {
           <div class="search-filters">
             <pv-dropdown
               class="search-dropdown"
-              placeholder="Filter by fare"
+              :placeholder="$t('webApplication.findYourPark.fareFilter')"
               v-model="selectedFare"
               :options="fareOptions"
             />
             <pv-dropdown
               class="search-dropdown"
-              placeholder="Filter by rating"
+              :placeholder="$t('webApplication.findYourPark.ratingFilter')"
               v-model="selectedRating"
               :options="ratingOptions"
             />
           </div>
 
-          <pv-button label="Search" class="search-btn" icon="pi pi-search" />
+          <pv-button :label="$t('webApplication.findYourPark.searchButton')" class="search-btn" icon="pi pi-search" />
         </form>
       </div>
       <div class="map-container">
